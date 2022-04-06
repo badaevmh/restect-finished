@@ -88,13 +88,13 @@ body {
 .social-list {
   position: absolute;
   left: 0;
-  top: -240%;
+  top: -280%;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #fff;
-  opacity: 0;
+  opacity: 1;
 }
 
 .social-close > svg {
@@ -111,11 +111,18 @@ body {
 }
 
 .social-link {
-  padding: .5rem 0;
+  padding: .6rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, .4);
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.social-link > img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .3;
 }
 
 /* --------NAVPAGE---------- */
