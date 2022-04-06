@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo/restect_mark_white.png" />
+  <title>IT услуги, Грозный</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Russo+One&display=swap"
+    rel="stylesheet" />
+  <!-- SLIDER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <!-- MAPBOX -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet" />
+  <!-- LINK -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+<!-- ФОНОВОЕ ВИДЕО -->
+  <div class="intro-bg">
+    <video autoplay loop muted>
+      <source src="media/green-bg.mp4" />
+    </video>
+  </div>
+
+<!-- СТРАНИЦА НАВИГАЦИИ -->
+  <div class="nav-page">
+    <div class="nav-close">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4.22676 4.22676C4.5291 3.92441 5.01929 3.92441 5.32163 4.22676L12 10.9051L18.6784 4.22676C18.9807 3.92441 19.4709 3.92441 19.7732 4.22676C20.0756 4.5291 20.0756 5.01929 19.7732 5.32163L13.0949 12L19.7732 18.6784C20.0756 18.9807 20.0756 19.4709 19.7732 19.7732C19.4709 20.0756 18.9807 20.0756 18.6784 19.7732L12 13.0949L5.32163 19.7732C5.01929 20.0756 4.5291 20.0756 4.22676 19.7732C3.92441 19.4709 3.92441 18.9807 4.22676 18.6784L10.9051 12L4.22676 5.32163C3.92441 5.01929 3.92441 4.5291 4.22676 4.22676Z" />
+      </svg>
+    </div>
+    <nav class="nav">
+      <a class="nav-link" href="#">Главная <span>01</span></a>
+      <a class="nav-link" href="#">Услуги <span>02</span></a>
+      <a class="nav-link" href="#">Отзывы <span>03</span></a>
+      <a class="nav-link" href="#">Адрес <span>04</span></a>
+    </nav>
+    <div class="info">
+      <div class="info-row">
+        <h3 class="info-title">Где мы</h3>
+        <p class="info-text">пр. Путина 16 А</p>
+      </div>
+      <div class="info-row">
+        <h3 class="info-title">Контакты</h3>
+        <p class="info-text">yusupsh@gmail.com</p>
+      </div>
+      <div class="info-row">
+        <h3 class="info-title">Подписаться</h3>
+        <p class="info-text">Instagram</p>
+      </div>
+    </div>
+  </div>
+
+<!-- ШАПКА -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <img src="img/logo/restect_logo_white.png" alt="" />
+        </div>
+        <a href="#" class="tel">+7(928) 895-96-41</a>
+        <div class="header-toggle">
+          <div class="social-panel">
+            <div class="social-btn">Оставить заявку</div> 
+            <div class="social-list">
+              <a class="social-link" href="#">Instagram</a>
+              <a class="social-link" href="#">WhatsApp</a>
+              <a class="social-link" href="#">Telegram</a>
+              <a class="social-link" href="#">e-Mail</a>
+              <div class="social-close"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.22676 4.22676C4.5291 3.92441 5.01929 3.92441 5.32163 4.22676L12 10.9051L18.6784 4.22676C18.9807 3.92441 19.4709 3.92441 19.7732 4.22676C20.0756 4.5291 20.0756 5.01929 19.7732 5.32163L13.0949 12L19.7732 18.6784C20.0756 18.9807 20.0756 19.4709 19.7732 19.7732C19.4709 20.0756 18.9807 20.0756 18.6784 19.7732L12 13.0949L5.32163 19.7732C5.01929 20.0756 4.5291 20.0756 4.22676 19.7732C3.92441 19.4709 3.92441 18.9807 4.22676 18.6784L10.9051 12L4.22676 5.32163C3.92441 5.01929 3.92441 4.5291 4.22676 4.22676Z"/>
+            </svg></div>
+            </div>
+          </div>
+          <div class="nav-btn">Menu</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- ГЛАВНАЯ СТРАНИЦА -->
+  <div class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <div class="intro-content">
+          <h1 class="intro-title">Все виды компьютерных услуг в Грозном!</h1>
+          <a class="btn" href="#">Связаться с нами <svg xmlns="http://www.w3.org/2000/svg"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"></path><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg></a>
+        </div>
+        <div class="intro-img">
+          <img src="img/pc_image.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- УСЛУГИ -->
+  <section class="services">
+    <div class="container">
+      <div class="section-top text-right">
+        <div class="section-subtitle">уточняйте цены</div>
+        <h2 class="section-title">Наши услуги</h2>
+      </div>
+      <div class="services__inner">
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img" src="https://img.icons8.com/ios-filled/100/2cb67d/workstation.png" />
+          <p class="services__card-text">Сборка/ремонт компьютера</p>
+        </div>
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img" src="https://img.icons8.com/ios-filled/100/2cb67d/laptop.png" />
+          <p class="services__card-text">Ремонт ноутбуков</p>
+        </div>
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img" src="https://img.icons8.com/ios-glyphs/100/2cb67d/under-computer.png" />
+          <p class="services__card-text">Услуги системного администратора</p>
+        </div>
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img" src="https://img.icons8.com/material-rounded/100/2cb67d/maintenance.png" />
+          <p class="services__card-text">
+            Услуги для малого/среднего бизнеса
+          </p>
+        </div>
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img"
+            src="https://img.icons8.com/material-outlined/100/2cb67d/maintenance-date.png" />
+          <p class="services__card-text">Обслуживание и аутсорсинг</p>
+        </div>
+        <div class="services__card" data-tilt data-tilt-scale="1.01" data-tilt-glare data-tilt-max-glare="0.3">
+          <img class="services__card-img" src="https://img.icons8.com/material-outlined/100/2cb67d/programming.png" />
+          <p class="services__card-text">Установка программ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- ДРОПЛИСТ -->
+  <section class="full-services" id="full-services">
+    <div class="container">
+      <div class="section-top">
+        <h2 class="section-title">Полный перечень услуг</h2>
+      </div>
+      <div class="full-services__inner">
+        <ul class="full-services__list">
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Услуги системного администратора
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa и нacтpoйкa cepвepa Windows (2008,2012, 2016,
+                2019) - <span>1 000руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa AD,DNS,DHCP Exchange cepвepa Windows (2008,2012,
+                2016, 2019) - <span>25 000руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa cepвepa Linux - <span>8 000руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa cepвepa бaз дaнныx 1C, MySQL, postGRE. MSSQL -
+                <span>25 000руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa aктивнoгo oбopудoвaния (Wi-Fi,router) -
+                <span>600руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa cиcтeм peзepвнoгo кoпиpoвaния
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa cиcтeм кoнтpoля дocтупa
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa видeoнaблюдeния
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Обслуживание и аутсорсинг
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Компьютер - <span>700руб/месяц</span>
+              </li>
+              <li class="full-services__droplist-item">
+                cepвep Linux, KVM - <span>1 000руб/месяц</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Сepвep Windows (2008,2012,2016,2019) -
+                <span>1 300руб/месяц</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пpинтep, ceтeвoe xpaнилищe - <span>400руб/месяц</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пoддepжкa caйтa - <span>От 5 000руб/месяц</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Вызов мастера
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Диагностика компьютера - <span>бесплатно</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Чистка системного блока от пыли, замена термопасты -
+                <span>500руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Установка и подключение компьютера - <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Консультация по вопросам модернизации компьютера -
+                <span>бесплатно</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Покупка и доставка клиенту оборудования или ПО (в пределах
+                города) - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Обучение и консультирование - <span>700руб/час</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Установка программного обеспечения
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Установка Windows XP, Windows 7, Windows 8, windows 10 (Без
+                сохранения данных пользователя) - <span>600руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Сброс административного пароля windows - <span>500руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Установка программ для просмотра видео и фото -
+                <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Комплекская установка всех необходимых программ -
+                <span>900руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Oчиcткa кoмпьютepa oт пpoгpaмм - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Koмплeкcнaя уcтaнoвкa, нacтpoйки и удaлeниe пpoгpaмм -
+                <span>700руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пoдбop и уcтaнoвкa кoмплeкта дpaйвepoв - <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa, пoдключeниe втopoгo мoнитopa, тeлeвизopa HDMI -
+                <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пoдключeниe и уcтaнoвкa дpaйвepa пpинтepa, cкaнepa (USB,
+                LPT), MФУ - <span>300руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пoдключeниe и уcтaнoвкa дpaйвepa USB Wi-Fi, Bluetooth,
+                Infrared, GPRS-мoдeмa - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa aнтивиpуca - <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Cкaниpoвaниe cиcтeмы нa нaличиe виpуcoв/лeчeниe виpуcoв -
+                <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Удaлeниe Бaннepa – блoкиpoвщикa - <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Boccтaнoвлeниe дaнныx c нeиcпpaвнoгo кoмпьютepa -
+                <span>800руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa выxoдa в Интepнeт - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Oбжим кoннeктopa rj45 - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa Лoкaльнoй ceти - <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa Wi-Fi poутepa - <span>500руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Пpoклaдкa пpoвoдa в пoмeщeниe, c учeтoм cтoимocти кaбeля -
+                <span>100руб/м</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Установка или замена комплектующих в системном блоке
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa или зaмeнa кoмплeктующиx в cиcтeмнoм блoкe -
+                <span>300руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa/зaмeнa пpoцeccopa + пpoцeccopнoгo вeнтилятopa -
+                <span>400руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa/зaмeнa блoкa питaния - <span>300руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Зaмeнa кopпуca кoмпьютepa - <span>800руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Cбopкa кoмпьютepa из кoмплeктующиx - <span>800руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Замена тepмoпacты - <span>300руб</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Уcтaнoвкa или зaмeнa кoмплeктующиx в нoутбукe
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Чиcткa oт пыли, зaмeнa тepмoпacты/тepмoпpoклaдки -
+                <span>1 200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Зaмeнa мaтpицы (экpaнa) нoутбукa/нeтбукa -
+                <span>800руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa/зaмeнa кoмплeктующиx, нe тpeбующaя пoлнoй paзбopки
+                - <span>200руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa/зaмeнa кoмплeктующиx, тpeбующaя пoлнoй paзбopки -
+                <span>800руб</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Пакеты услуг
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Уcтaнoвкa OC (Windows) + нeoбxoдимыe пpoгpaммы + дpaйвepы
+                уcтpoйcтв - <span>800руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Hacтpoйкa Wi-Fi poутep + кoмпьютep - <span>600руб</span>
+              </li>
+              <li class="full-services__droplist-item">
+                Лeчeниe ПK + oптимизaция (уcкopeниe) - <span>600руб</span>
+              </li>
+            </ul>
+          </li>
+          <li class="full-services__list-item">
+            <a class="full-services__list-link" href="#">
+              Услуги для малого и среднего бизнеса
+              <svg class="full-services__list-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15"
+                height="15" viewBox="0 0 172 172" style="fill: #000000">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                  stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                  font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                  style="mix-blend-mode: normal">
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#ffffff">
+                    <path
+                      d="M1.10579,49.17373l82.41667,78.83333c1.38574,1.32275 3.56934,1.32275 4.95508,0l82.41667,-78.83333c1.0568,-1.01131 1.39274,-2.56502 0.84684,-3.92277c-0.5424,-1.36125 -1.86165,-2.25008 -3.32438,-2.25008h-14.33333c-0.91683,0 -1.79867,0.34993 -2.46354,0.98332l-65.61979,62.16243l-65.61979,-62.16243c-0.66488,-0.63338 -1.54671,-0.98332 -2.46354,-0.98332h-14.33333c-1.46273,0 -2.78198,0.88883 -3.32438,2.25008c-0.5459,1.35775 -0.20996,2.91146 0.84684,3.92277z">
+                    </path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <ul class="full-services__droplist">
+              <li class="full-services__droplist-item">
+                Установка настройка 1С:Управление торговлей
+              </li>
+              <li class="full-services__droplist-item">
+                Установка настройка торгового оборудования (Сканер, принтер,
+                весы и т.д.)
+              </li>
+              <li class="full-services__droplist-item">
+                Продажа лицензии на 1С
+              </li>
+              <li class="full-services__droplist-item">
+                Продажа торгового оборудования
+              </li>
+              <li class="full-services__droplist-item">
+                Настройка локальной сети
+              </li>
+              <li class="full-services__droplist-item">
+                Установка, настройка оборудования для видеонаблюдения
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p class="full-services__note">
+          <span>*</span> B cтoимocть paбoт нe включeнa cтoимocть pacxoдныx
+          мaтepиaлoв. Paбoты, c нecтaндapтными мaтepиaлaми и нe
+          пpeдуcмoтpeнныe дaнным пpeйcкуpaнтoм, выпoлняютcя пo дoгoвopным
+          цeнaм. Пpaйc-лиcт имeeт цeлью пoкaзaть уpoвeнь цeн нa нaши уcлуги,
+          oкoнчaтeльную cтoимocть paбoт пocчитaeт cиcтeмный aдминиcтpaтop нa
+          мecтe.
+        </p>
+      </div>
+      <div class="full-services__bottom">
+        <a class="btn" download="" href="media/Полный перечень.xlsx">
+          Скачать перечень<svg xmlns="http://www.w3.org/2000/svg"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!--ПРЕИМУЩЕСТВА -->
+  <section class="features">
+    <div class="container">
+
+      <div class="section-top">
+        <h2 class="section-title text-center">Что мы может вам предложить?</h2>
+      </div>
+
+      <div class="features-inner">
+        <div class="features-card">
+          <img src="img/features/key.png" alt="">
+          <h3 class="features-title">Длительная гарантия</h3>
+        </div>
+
+        <div class="features-card">
+          <img src="img/features/repair.png" alt="">
+          <h3 class="features-title">Ремонт любого уровня сложности</h3>
+        </div>
+
+        <div class="features-card">
+          <img src="img/features/time.png" alt="">
+          <h3 class="features-title">Работа без перерывов</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- СЛАЙДЕР -->
+  <section class="reviews">
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3 class="slide-author">Юсуф Межиев</h3>
+            <div class="slide-subtitle">Системный администратор</div>
+            <p class="slide-text">Компьютар йохнер. Х1окхар ч1ог сиха а, дика а та йи са и. Кхерг ахч дал мегар ду шун.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="slide-author">Юсуф Межиев</h3>
+            <div class="slide-subtitle">Системный администратор</div>
+            <p class="slide-text">Компьютар йохнер. Х1окхар ч1ог сиха а, дика а та йи са и. Кхерг ахч дал мегар ду шун.</p>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="slide-author">Юсуф Межиев</h3>
+            <div class="slide-subtitle">Системный администратор</div>
+            <p class="slide-text">Компьютар йохнер. Х1окхар ч1ог сиха а, дика а та йи са и. Кхерг ахч дал мегар ду шун.</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <h2 class="reviews-title">Отзывы</h2>
+    </div>
+  </section>
+
+<!-- КАРТА -->
+<section class="contacts" id="contacts">
+  <div class="container">
+    <div class="section-top text-center">
+      <h2 class="section-title">Наше местоположение</h2>
+    </div>
+    <div class="contacts__inner">
+      <div class="contacts__map">
+        <div class="map" id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+  <script src="js/vanilla-tilt.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/mapbox.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
