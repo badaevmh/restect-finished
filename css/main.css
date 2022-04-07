@@ -32,8 +32,7 @@ body {
     top: 0;
     z-index: 10;
     background-color: #000;
-
-
+    border-block: 1px solid rgba(255, 255, 255, .1);
 }
 
 .header-inner {
@@ -187,6 +186,15 @@ body {
     font-size: 3rem;
 }
 
+.info-social {
+  display: flex;
+  gap: .5rem;
+}
+
+.info-icon {
+  width: 96px;
+}
+
 .nav-close {
     position: absolute;
     top: 5rem;
@@ -227,6 +235,7 @@ body {
 .intro-inner {
     height: 100vh;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -246,7 +255,7 @@ body {
 }
 
 .btn {
-    border: 2px solid #1e4933;
+    border: 2px solid #185234;
     border-radius: 5px;
     padding: 1rem 2rem;
     text-transform: uppercase;
@@ -257,7 +266,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #1e4933;
+    background-color: #185234;
 }
 
 .btn > svg {
@@ -268,7 +277,7 @@ body {
 }
 
 .intro-img {
-    width: 40rem;
+    max-width: 45rem;
 }
 
 /* --------SERVICES---------- */
@@ -347,6 +356,10 @@ body {
   .services__card-img {
     width: 100px;
     margin-bottom: 2rem;
+  }
+
+  .services__card:nth-child(1) > .services__card-img {
+    width: 90px;
   }
   
   .services__card-text {
@@ -500,7 +513,7 @@ body {
 
 .reviews {
   height: 50vh;
-  margin-bottom: 5rem;
+
 }
 
 .reviews > .container {
@@ -573,10 +586,29 @@ body {
   background-color: #000;
 }
 
+.contacts__inner {
+  margin-bottom: 3rem;
+}
+
+.info.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info.contacts > .info-row {
+  text-align: center;
+}
+
 .contacts__map .map {
   pointer-events: none;
   border-radius: 10px;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   height: 450px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 4rem 0;
+  text-align: center;
 }
