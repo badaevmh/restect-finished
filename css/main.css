@@ -140,7 +140,7 @@ body {
 
 .nav-page {
     position: fixed;
-    top: -100%;
+    top: -130%;
     z-index: 999;
 
     height: 100vh;
