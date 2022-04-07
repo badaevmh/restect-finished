@@ -10,7 +10,7 @@ const body = document.querySelector('body');
 /* АНИМАЦИЯ GSAP ДЛЯ НАВИГАЦИИ И ЗАЯВКИ */
 let t1 = gsap.timeline({ paused: true });
 t1.to('.nav-page', { opacity: 1, duration: 1, top: 0, ease: Power2.easeInOut })
-t1.to('.nav-link', { opacity: 1, duration: .5, stagger: 0.3, marginTop: 0, ease: Power2.easeInOut })
+t1.to('.nav-link', { opacity: 1, duration: .5, marginTop: 0, ease: Power2.easeInOut })
 
 navBtn.addEventListener('click', () => {
   t1.play().timeScale(1);
