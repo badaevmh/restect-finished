@@ -268,9 +268,10 @@ body {
 }
 
 .btn {
+    display: flex;
     border: 2px solid #185234;
     border-radius: 5px;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem .75rem;
     text-transform: uppercase;
     font-size: 1.75rem;
     background-color: #185234;
@@ -283,8 +284,8 @@ body {
 }
 
 .btn > svg {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: .5rem;
   fill: var(--text-color);
 }
@@ -622,6 +623,11 @@ body {
 
 
 /* ----------------МЕДИА ЗАПРОСЫ------------- */
+@media (max-width: 1200px) {
+  .header > .container {
+    padding: 0;
+  }
+}
 
 @media (max-width: 1024px) {
   :root {
@@ -629,14 +635,13 @@ body {
   }
 
   .intro-inner {
-    padding-top: 7rem;
     flex-direction: column-reverse;
     justify-content: center;
     gap: 2rem;
   }
 
   .intro-img {
-    max-width: 40rem;
+    max-width: 50rem;
   }
 
   .intro-content {
@@ -665,23 +670,19 @@ body {
   }
 
   .social-btn {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
   }
 
   .logo {
-    max-width: 7rem;
-  }
-
-  .desktop-logo {
-    display: none;
-  }
-
-  .mobile-logo {
-    display: block;
+    padding: .5rem;
   }
 
   .services__card {
     min-height: 35rem;
+  }
+
+  .features-inner {
+    padding: 0;
   }
 
   .info.contacts {
@@ -702,6 +703,10 @@ body {
   .services {
     padding: 0 6rem 5rem;
   }
+
+  .tel {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -715,10 +720,6 @@ body {
 
   .social-link > img {
     width: 30px;
-  }
-
-  .social-btn {
-    padding: 1rem 2rem;
   }
 
   .tel {
@@ -739,21 +740,108 @@ body {
   }
 
   .features-inner {
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .features-title {
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
   }
 
   .features-card > img {
-    max-height: 170px;
+    max-height: 200px;
   }
 
 }
 
-@media (max-width: 370px) {
-  .services__card {
-    min-height: ;
+
+/* GLITCH */
+
+.glitch {
+/*   font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase; */
+  position: relative;
+
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 500ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  /* color: green; */
+  opacity: 0.8;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  /* color: red; */
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
 
 
