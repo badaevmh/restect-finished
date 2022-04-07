@@ -21,7 +21,7 @@ navClose.addEventListener('click', () => {
 });
 
 let t2 = gsap.timeline({ paused: true });
-t2.to('.social-list', { opacity: 1, duration: 1, top: 65, ease: Power2.easeInOut })
+t2.to('.social-list', { opacity: 1, duration: 1, top: '100%', ease: Power2.easeInOut })
 
 socialBtn.addEventListener('click', () => {
   t2.play().timeScale(1);
@@ -73,4 +73,21 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 2
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 5
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      }
+    }
   });
