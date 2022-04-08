@@ -390,11 +390,11 @@ body {
   }
   
   .services__card:hover .services__card-img {
-    transform: translateZ(50px);
+    
   }
   
   .services__card:hover .services__card-text {
-    transform: translateZ(50px);
+    
   }
 
 /* --------DROPLIST---------- */
