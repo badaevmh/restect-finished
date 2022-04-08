@@ -469,7 +469,7 @@ body {
   width: 6px;
   height: 2px;
   background-color: #fff;
-  top: 50%;
+  top: 1.2rem;
   transform: translateY(-50%);
   left: 4px;
 }
