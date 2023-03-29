@@ -455,23 +455,15 @@ body {
   gap: .3rem;
 }
 .full-services__droplist.active {
+  padding: 10px;
   display: flex;
 }
 .full-services__droplist-item {
+  list-style: square inside;
   padding: .2rem 2rem;
   font-size: 1.5rem;
   position: relative;
   font-weight: 300;
-}
-.full-services__droplist-item::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 2px;
-  background-color: #fff;
-  top: 1.2rem;
-  transform: translateY(-50%);
-  left: 4px;
 }
 .full-services__droplist span {
   font-weight: 600;
